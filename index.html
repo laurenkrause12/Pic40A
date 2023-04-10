@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Shut The Box</title>
+    <script src="shut_the_box.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Shut The Box</h1>
+    </header>
+
+    <main>
+      <section id="Rules">
+        <h2>The Rules</h2>
+        <ol type = "i">
+          <li> Each turn, you roll the dice (or die) and select 1 or more boxes which sum to the value of your roll.</li>
+          <li> You will not be allowed to pick the boxes which you choose on subsequent turns.</li>
+          <li> When the sum of the boxes which are left is less than or equal to 6, you will only roll a single die.</li>
+          <li> When you cannot make a move or you give up, the sum of the boxes which are left gives you your score.</li>
+          <li> Lower scores are better and a score of 0 is called "shutting the box".</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Dice roll</h2>
+        <fieldset id = "dice">
+          <input class = "dice" type = "button" value="Roll dice">
+          <label>Result: <span id="result"></span></label> 
+        </fieldset>
+      </section>
+
+      <section>
+        <h2>Box Selection</h2>
+      </section>
+      <!-- table aligning text (label) and checkbox -->
+      <table>
+          <tr>
+            <td name = "txt" id = "1" class = "txt" >1</td>
+            <td name = "txt" id = "2" class = "txt">2</td>
+            <td name = "txt" id = "3" class = "txt">3</td>
+            <td name = "txt" id = "4" class = "txt">4</td>
+            <td name = "txt" id = "5" class = "txt">5</td>
+            <td name = "txt" id = "6" class = "txt">6</td>
+            <td name = "txt" id = "7" class = "txt">7</td>
+            <td name = "txt" id = "8" class = "txt">8</td>
+            <td name = "txt" id = "9" class = "txt">9</td>
+          </tr>
+          <tr>
+            <td><input id = "checkbox" type="checkbox"/></td>
+            <td><input id = "checkbox" type="checkbox"/></td>
+            <td><input id = "checkbox" type="checkbox"/></td>
+            <td><input id = "checkbox" type="checkbox"/></td>
+            <td><input id = "checkbox" type="checkbox"/></td>
+            <td><input id = "checkbox" type="checkbox"/></td>
+            <td><input id = "checkbox" type="checkbox"/></td>
+            <td><input id = "checkbox" type="checkbox"/></td>
+            <td><input id = "checkbox" type="checkbox"/></td>
+          </tr>
+      </table>
+      
+      <fieldset id = "submit">
+        <input class = "submit" id="submitBtn" type="button" value="Submit Box selection">
+        <input type="button" class = "quit" id = "quitBtn" value="I give up / I can't make a valid move">
+      </fieldset>
+
+    </main>
+
+    <footer>
+      <hr>
+      <small>
+        &copy; Lauren Krause, 2022 (the decade of the "new norm")
+      </small>
+    </footer>
+  </body>
+
+</html>
+

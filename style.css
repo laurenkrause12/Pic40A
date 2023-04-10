@@ -1,0 +1,85 @@
+
+/*
+Background and font change
+*/
+
+body {
+  font-family: monospace;
+  color: rgb(5, 17, 187);
+  background-color: rgb(184, 245, 211);
+}
+
+/*
+Border Change
+*/
+
+#submit {
+  border-color: grey;
+  border-style: inset;
+}
+
+#dice {
+  border-color: grey;
+  border-style: dotted;
+  padding: 15px;
+}
+
+/*
+Center Shut the Box H1
+*/
+header {
+text-shadow: 0.12em -0.08em seagreen;
+text-align: center;
+}
+
+/*
+Add border to entire box table
+*/
+table {
+border: 2px double white;
+align-content: center;
+}
+
+/*
+Add border around individual 1 - 9 text
+*/
+.txt {
+  width: 2%;
+  border: 1px dashed rgb(151, 107, 181);
+  text-align: center;
+}
+
+#submit {
+text-align: center;
+}
+
+
+.shade {
+background-color: blueviolet;
+}
+
+/*
+Position checkboxes relative to text
+*/
+.box {
+margin-left: 30px;
+margin-right: 30px;
+}
+
+
+#dice{
+display: inline-block;
+text-align: center;
+}
+
+#result {
+position: relative;
+}
+
+
+
+
+
+
+
+
